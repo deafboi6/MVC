@@ -1,5 +1,4 @@
 const router = require("express").Router();
-// const { User } = require("../../models/User");
 const { User } = require("../../models");
 
 router.post("/", async (req, res) => {
@@ -61,7 +60,6 @@ router.post("/logout", (req, res) => {
     } else {
         console.log("you got stuck here --userRoutes logout POST");
         res.status(404).end();
-        // res.replace("/");
     }
 });
 module.exports = router;
