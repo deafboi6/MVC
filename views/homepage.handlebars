@@ -9,8 +9,10 @@
     <div>
         <p>{{blog.description}}</p>
     </div>
-    <div>
-        <button>Add Comment</button>
-    </div>
 </div>
 {{/each}}
+
+{{#if logged_in}}
+    <button type="button" class="btn btn-primary btn-lg" id="add-post">Add Post</button>
+    <script src="/js/sendToCreate.js"></script>
+{{/if}}
