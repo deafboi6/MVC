@@ -59,7 +59,9 @@ router.post("/logout", (req, res) => {
         res.status(204).end();
         });
     } else {
+        console.log("you got stuck here --userRoutes logout POST");
         res.status(404).end();
+        // res.replace("/");
     }
 });
 module.exports = router;
